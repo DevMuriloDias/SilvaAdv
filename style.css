@@ -1,0 +1,20 @@
+/* Animação base para os elementos surgirem do zero */
+.reveal { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: all 0.8s ease-out; 
+}
+
+/* Classe que o JavaScript vai adicionar quando a tela rolar */
+.reveal.active { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Esconder aquela setinha padrão feia do elemento <details> do HTML5 */
+details > summary { 
+    list-style: none; 
+}
+details > summary::-webkit-details-marker { 
+    display: none; 
+}   
